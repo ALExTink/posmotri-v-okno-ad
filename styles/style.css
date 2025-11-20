@@ -10,16 +10,16 @@ html {
 
 .page {
   display: flex;
-  justify-content: center; /*гор центр*/
-  align-items: center; /*верт центр*/
+  justify-content: center; 
+  align-items: center; 
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  inline-size: 1200px; /*фикс ширина*/
+  inline-size: 1200px; 
   block-size: 100%;
-  flex-direction: column; /*флекс верх контейнера*/
+  flex-direction: column; 
 }
 
 h1,
@@ -58,7 +58,8 @@ ol {
   display: grid;
   grid-template-columns: 710px 400px;
   grid-template-areas: "result details";
-  align-items: end; /*прилипание к низу верт оси*/
+  align-items: end; 
+
   column-gap: 30px;
   width: 1140px;
   height: 534px;
@@ -71,19 +72,19 @@ ol {
 .result__video-container {
   position: relative;
   height: 386px;
-  margin-bottom: 20px; /*отступ снизу*/
+  margin-bottom: 20px; 
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /*масштабирование содержимого, чтобы заполнить весь контейнер целиком*/
+  object-fit: cover; 
 }
 
 .content__details {
   display: flex;
   flex-direction: column;  
-  padding-right: 20px; /*отступ справа*/
+  padding-right: 20px;
   grid-area: details;
   height: 534px;
 }
@@ -120,7 +121,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /*свойство равномерно оставляет место для всех контейнеров*/
+  flex-grow: 1; 
   gap: 20px;
 }
 
@@ -193,9 +194,9 @@ ol {
   border: 0;
   padding: 0;
   overflow: hidden;
-  clip: rect(0 0 0 0); /*задание прямоугольника, в который вписывается элемент*/
+  clip: rect(0 0 0 0); 
   white-space: nowrap;
-  clip-path: inset(100%); /*видимая область сдвигается на 100%, вследствие чего нет видимых элементов*/
+  clip-path: inset(100%); 
 }
 
 .search-form__textfield {
@@ -204,15 +205,15 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  opacity: 0.7; /*полупрозрачность, 70%*/
-  overflow: hidden; /*скрытие любых частей содержимого*/
+  opacity: 0.7; 
+  overflow: hidden; 
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  text-overflow: ellipsis; /*длинный текст будет обрезан и будут добавлено многоточие*/
+  text-overflow: ellipsis; 
   background-color: transparent;
-  white-space: nowrap; /*запрет переноса строк*/
-  appearance: none; /*удаление стилей браузерного оформления*/
+  white-space: nowrap; 
+  appearance: none; 
 }
 
 .search-form__textfield:active {
@@ -240,7 +241,7 @@ ol {
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff; /*белая линия толщиной в 1px вокруг обьекта*/
+  outline: 1px solid #fff; 
   outline-offset: 1px;
 }
 
@@ -269,7 +270,7 @@ ol {
 
 .search-form__label {
   display: flex;
-  width: fit-content; /*автоматичсекая установка ширины элемента по его содержимому*/
+  width: fit-content; 
 
 }
 
@@ -300,7 +301,8 @@ ol {
 }
 
 .search-form__submit-button {
-  align-self: end; /*индивидуальное выравнивание элемента к концу поперечной оси*/
+  align-self: end; 
+  
   width: 194px;
 }
 
